@@ -1,6 +1,7 @@
 package fr.wildcodeschool.exam.fartsmeller;
 
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,7 +29,7 @@ public class EntryActivity extends AppCompatActivity {
     private EditText latitudeText, longitudeText;
     private SeekBar odorBar;
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
-    private Button submitButton;
+    private Button submitButton, resultsButton;
     private TextView odorText, confirmation;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -76,6 +77,7 @@ public class EntryActivity extends AppCompatActivity {
         this.submitButton = (Button) findViewById(R.id.submitButton);
         this.confirmation = (TextView) findViewById(R.id.confirmation);
         this.odorText = (TextView) findViewById(R.id.odorText);
+        this.resultsButton = (Button)findViewById(R.id.showResult);
         this.odorText.setText("0");
 
 
@@ -110,6 +112,13 @@ public class EntryActivity extends AppCompatActivity {
                 } else {
                     Toast.makeText(EntryActivity.this, "Set lat & long", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        this.resultsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(EntryActivity.this, ResultActivity.class));
             }
         });
 

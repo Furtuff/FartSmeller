@@ -3,4 +3,6 @@
     <string name="confirmation_message">" Prout sended"</string>
     <string name="longitude">Enter longitude</string>
     <string name="latitude">Enter latitude</string>
+    <string name="submit">Submit</string>
+    <string name="show_results">Show Results</string>
 </resources>
