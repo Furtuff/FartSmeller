@@ -16,39 +16,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Enter latitude"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/longitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:hint="Enter longitude" />
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:weightSum="1">
-    <SeekBar
-        android:id="@+id/odor"
+        android:hint="Enter longitude"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15sp"
-        android:max="100"
-        android:layout_weight="0.8"
-        android:layout_marginStart="10sp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/odorText"
-        android:layout_weight="0.2"
-        android:layout_marginEnd="10sp"/>
-</LinearLayout>
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <SeekBar
+            android:id="@+id/odor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="15sp"
+            android:layout_weight="0.8"
+            android:minWidth="150sp"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/odorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10sp"
+            android:text="gnaaa"
+            android:layout_weight="0.2" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_marginTop="30sp"/>
+        android:layout_marginTop="30sp"
+        android:text="Submit" />
 </LinearLayout>
