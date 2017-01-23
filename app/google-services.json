@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "300507067432",
+    "firebase_url": "https://fartsmeller-2e9ba.firebaseio.com",
+    "project_id": "fartsmeller-2e9ba",
+    "storage_bucket": "fartsmeller-2e9ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300507067432:android:7cdb8a1c8400d288",
+        "android_client_info": {
+          "package_name": "fr.wildcodeschool.exam.fartsmeller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300507067432-pasqar1oejpj3r72a3m7ti968hj4c670.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.exam.fartsmeller",
+            "certificate_hash": "2F08B11FB4A8FAEB5812AE9D2DE808D2E606385F"
+          }
+        },
+        {
+          "client_id": "300507067432-5lcvdfk75c8r34e0ep1eirrvjalmqgi8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5wzOT61zxWmdDz93azw88SAieOxZ2N8Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300507067432-5lcvdfk75c8r34e0ep1eirrvjalmqgi8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
